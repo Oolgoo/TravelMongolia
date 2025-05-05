@@ -9,7 +9,11 @@ import { Toaster } from './components/ui/sonner.jsx'
 import { GoogleOAuthProvider } from '@react-oauth/google'
 import Viewtrip from './view-trip/[tripId]/index.jsx'
 import MyTrips from './my-trips/index.jsx'
-
+import Blog from './my-blog/index.jsx'
+import BlogContents from './my-blog/blogs/blogContents.jsx'
+import CommentSection from './Comments/index.jsx'
+import TravelPlansPage from './TravelPlansPage/index.jsx'
+import TravelPlanDetail from './TravelPlansPage/TravelPlanDetail/index.jsx'
 const router=createBrowserRouter([
   {
     path:'/',
@@ -26,6 +30,30 @@ const router=createBrowserRouter([
   {
     path:'/my-trips',
     element:<MyTrips/>
+  },
+  {
+    path:'/my-blog',
+    element:<Blog/>
+  },
+  {
+    path: '/blogs/:id',
+    element:<BlogContents />
+    
+  },
+  {
+    path: '/comments',
+    element:<CommentSection/>
+    
+  },
+  {
+    path: '/travel-plans',
+    element:<TravelPlansPage/>
+    
+  },
+  {
+    path: '/plan/:id',
+    element:<TravelPlanDetail/>
+    
   }
 ])
 

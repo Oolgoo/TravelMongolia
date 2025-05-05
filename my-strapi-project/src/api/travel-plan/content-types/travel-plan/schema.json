@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "travel_plans",
+  "info": {
+    "singularName": "travel-plan",
+    "pluralName": "travel-plans",
+    "displayName": "Travel Plans",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "destination": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "budget": {
+      "type": "integer"
+    },
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "companyImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "gallery": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

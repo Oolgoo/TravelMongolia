@@ -59,11 +59,11 @@ function CreateTrip() {
     }
 
     if (formData?.noOfDays > 5 && !formData?.location || !formData?.budget || !formData?.traveler) {
-      toast("Please fill all details")
+      toast("Үлдээсэн хэсгийг нөхөж бичнэ үү")
       return;
     }
     setLoading(true);
-    toast('Please wait... We are working on it...')
+    toast('Түр хүлээнэ үү... Таньд тохирсон аялалын төлөвлөгөөг үүсгэж байна...')
     const FINAL_PROMPT = AI_PROMPT
       .replace('{location}', formData?.location?.label)
       .replace('{totalDays}', formData?.noOfDays)
@@ -131,7 +131,7 @@ function CreateTrip() {
         </div>
 
         <div>
-          <h2 className='text-xl my-3 font-medium'>Таны төсөв ?</h2>
+          <h2 className='text-xl my-3 font-medium'>Таны төсөв?</h2>
           <div className='grid grid-cols-3 gap-5 mt-5'>
             {SelectBudgetOptions.map((item, index) => (
               <div key={index}
