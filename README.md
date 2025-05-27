@@ -36,4 +36,4 @@ It also serves as a base for integrating more advanced features like VR and AI-b
 ```bash
 git clone https://github.com/Oolgoo/TravelMongolia.git
 cd TravelMongolia
-# Open index.html in browser
+
