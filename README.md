@@ -24,7 +24,6 @@ It also serves as a base for integrating more advanced features like VR and AI-b
 
 ## 📷 Screenshots
 
-> (Insert image links or upload screenshots below)
 
 ![Screenshot 1](./screenshots/homepage.png)  
 *Main interactive 3D map interface*
